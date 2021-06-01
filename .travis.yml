@@ -8,8 +8,7 @@ before_install:
   - docker build -t hikaritanabe -t tanabehikari/docker-react -f Dockerfile.dev .
 
 script:
-  #  - docker run -e CI=true tanabehikari/docker-react npm run test
-    - docker run -e CI=true hikarihikari/docker-react npm run test
+    - docker run -e CI=true tanabehikari/docker-react npm run test
 
 deploy:
   provider: elasticbeanstalk
